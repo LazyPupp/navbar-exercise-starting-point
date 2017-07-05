@@ -34,12 +34,12 @@ body {
 }
 
 .hamburger {
-    width: 48px;
-    height: 42px;
-    border: 1px solid #eeeeef;
-    border-radius: 2px;
-    box-shadow: 0 0 2px #eeeeef;
-    padding: 10px 10px;
+  width: 48px;
+  height: 42px;
+  border: 1px solid #eeeeef;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #eeeeef;
+  padding: 10px 10px;
 }
 
 .hamburger-stripe {
@@ -51,10 +51,10 @@ body {
 .image {
   display:none;
 }
-/*
+
 .hidden{
   display:none;
-}*/
+}
 
 .nav_bar_content{
   list-style: none;
@@ -66,18 +66,38 @@ body {
 
 .nav_root_links{
   border-top: 1px lightgray solid;
-  width: 100%;
 }
+
 .sign_in{
   border-bottom: 1px lightgray solid;
 }
 
+/*.toggle_how{
+  padding:10px;
+}
+
+.toggle_course{
+  padding:10px;
+}
+
+.reviews{
+  padding:10px;
+}
+
+.pricing{
+  padding:10px;
+}
+
+.sign{
+  padding:10px;
+}*/
+
 .nav_root_links > a{
-padding: 10px;
-text-decoration: none;
-display: block;
-font-size: 20px;
-color: #6799ff;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  color: #6799ff;
+  padding:10px;
 }
 
 .nav_children_content{
@@ -93,3 +113,81 @@ color: #6799ff;
 }
 /* Add your CSS here */
 
+
+@media only screen and (min-width:576px){
+  .image{
+    display:block;
+    width:100px;
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hidden{
+    display:block;
+  }
+
+  .hamburger{
+    display:none;
+  }
+
+  .main_container{
+    flex-wrap:nowrap;
+    justify-content: flex-start;
+  }
+
+  .logo{
+    flex-grow:0;
+    margin:12px 0px 10px 5px;
+  }
+
+  .nav_bar{
+    min-width:0px;
+    flex-grow:0;
+    width:80%;
+  }
+
+  .nav_bar_content{
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  
+  .nav_root_links, .sign_in{
+    border:0px;
+  }
+
+  .sign_in{
+    margin-left:auto;
+  }
+
+  .nav_root_links>a{
+    font-size:18px;
+    padding:15px 5px 10px 5px;
+    margin:0px;
+  }
+
+  .nav_root_links:hover{
+    border-bottom:1px blue solid;
+  }
+
+  .toggle_how{
+    width:123px;
+  }
+
+  .nav_children_content{
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .nav_children_links>a{
+    padding:0px;
+  }
+
+  .sub_nav_bar1,.sub_nav_bar2{
+    position:absolute;
+    width:100%;
+    top:50px;
+    left:0px;
+    border-top:1px gray solid;
+  }
+}
