@@ -24,27 +24,27 @@
     </svg>
 
     <!-- Main menu -->
-    <nav>
+    <nav class="nav_bar">
       <ul class="nav_bar_content">
-        <li>
-          <a href="#">
+        <li class="nav_root_links">
+          <a class="toggle_course" href="#">
             Courses
           </a>
           <nav>
-            <ul class="hidden">
-              <li>
+            <ul class="nav_children_content js_course">
+              <li class="nav_children_links">
                 <a href="#">
                   <img class="image" src="http://tf-assets-prod.s3.amazonaws.com/wow-next/course-icons/career.gz.svg" alt="Web Development Bootcamp">
                   Web Development Bootcamp
                 </a>
               </li>
-              <li>
+              <li class="nav_children_links">
                 <a href="#">
                   <img class="image" src="http://tf-assets-prod.s3.amazonaws.com/splash/data-science/data_science.svg" alt="Data Science">
                   Data Science Bootcamp
                 </a>
               </li>
-              <li>
+              <li class="nav_children_links">
                 <a href="#">
                   <img class="image" src="http://tf-assets-prod.s3.amazonaws.com/wow-next/splash-nav/master-a-new-skill.gz.svg" alt="All courses">
                   All courses
@@ -53,31 +53,31 @@
             </ul>
           </nav>
         </li>
-        <li>
-          <a href="#">
+        <li class="nav_root_links">
+          <a class="toggle_how" href="#">
             How it works
           </a>
           <nav>
-            <ul class="hidden">
-              <li>
+            <ul class="nav_children_content js_how">
+              <li class="nav_children_links">
                 <a href="#">
                   <img class="image" src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/mentorship.gz.svg" alt="1-on-1 mentorship">
                   1-on-1 mentorship
                 </a>
               </li>
-              <li>
+              <li class="nav_children_links">
                 <a href="#">
                   <img class="image" src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/career-services.gz.svg" alt="Career prep">
                   Career prep
                 </a>
               </li>
-              <li>
+              <li class="nav_children_links">
                 <a href="#">
                   <img class="image" src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/guarantee.gz.svg" alt="Job guarantee">
                   Web Development job guarantee
                 </a>
               </li>
-              <li>
+              <li class="nav_children_links">
                 <a href="#">
                   <img class="image" src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/jobs-report.gz.svg" alt="Student outcomes">
                   Student outcomes
@@ -86,22 +86,27 @@
             </ul>
           </nav>
         </li>
-        <li>
+        <li class="nav_root_links">
           <a href="#">
             Reviews
           </a>
         </li>
-        <li>
+        <li class="nav_root_links">
           <a href="#">
             Pricing
           </a>
         </li>
-        <li>
+        <li class="nav_root_links sign_in">
           <a href="#">
             Sign in
           </a>
         </li>
       </ul>
     </nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src='app.js'></script>
   </body>
 </html>

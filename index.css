@@ -12,20 +12,25 @@ body {
   display:flex;
   flex-wrap:wrap;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo{
   order:1;
+  flex-grow: 2;
   margin:12px 20px 10px 20px;
 }
 
 .hamburger_flex{
   order:2;
-  margin: 10px 0px 10px 27%;
+  margin: 10px 10px 5px 0px;
 }
 
-nav{
+.nav_bar{
   order:3;
+  flex-grow: 3;
+  margin: 0px;
+  min-width: 100%;
 }
 
 .hamburger {
@@ -46,13 +51,45 @@ nav{
 .image {
   display:none;
 }
-
+/*
 .hidden{
   display:none;
-}
+}*/
 
 .nav_bar_content{
   list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.nav_root_links{
+  border-top: 1px lightgray solid;
+  width: 100%;
+}
+.sign_in{
+  border-bottom: 1px lightgray solid;
+}
+
+.nav_root_links > a{
+padding: 10px;
+text-decoration: none;
+display: block;
+font-size: 20px;
+color: #6799ff;
+}
+
+.nav_children_content{
+  list-style: none;
+  padding: 0px;
+  background: #f9fbff;
+}
+
+.nav_children_links > a{
+  text-decoration: none;
+  display: block;
+  padding: 10px 0px 5px 10px;
 }
 /* Add your CSS here */
 
